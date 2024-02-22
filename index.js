@@ -8,7 +8,6 @@
   const counterItemCart = document.getElementById('ButtonAddToCard');
   // Valor inicial del contador
   let count = 0;
-  let countItem = 0;
 
   // Actualizar el texto del contador
   function updateCounter() {
@@ -35,14 +34,13 @@
   updateCounter();
 
   function updateCounterItems (){
-    if (countItem == 0){
+    if (count == 0){
       ItemsCarrito.style.display = none
     }
-    ItemsCarrito.textContent = countItem ;
+    ItemsCarrito.textContent = count;
 
   }
   counterItemCart.addEventListener('click', function() {
-    countItem++;
     updateCounterItems();
   });
 
