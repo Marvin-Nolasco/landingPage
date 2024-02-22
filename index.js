@@ -17,8 +17,12 @@
 
   // Manejador de eventos para el botón "Menos"
   decrementButton.addEventListener('click', function() {
-    count--;
-    updateCounter();
+    if (count > 0) {
+      count--;
+      updateCounter();
+    }else{
+      counterElement.textContent = "0";
+    }
   });
 
   // Manejador de eventos para el botón "Más"
