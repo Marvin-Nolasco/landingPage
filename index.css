@@ -1,0 +1,117 @@
+body{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+.imagenPrincipal {
+    width: 212px;
+}
+.nav {
+    display: flex;
+    border-bottom: solid 0.1px #8080803b;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+nav {
+    display: flex;
+}
+.content-1 {
+    display: flex;
+    justify-content: center;
+    width: 950px;
+    column-gap: 24px;
+}
+.miniauturas {
+    width: 50px;
+    height: 50px;
+}
+img {
+    border-radius: 8px;
+}
+.cantidad{
+    display: flex;
+    width: 95px;
+
+}
+#incrementButton , #decrementButton, #counter {
+    height: 25px;
+    width: 32px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: hsl(26, 100%, 55%);
+    border-left: 8px;
+    border-right: 8px;
+
+}
+#counter {
+    color: black !important;
+    background: #f0f0f0;
+    border-radius: none !important;
+}
+
+.acciones {
+    display: flex;
+    gap: 24px;
+}
+
+#ButtonAddToCard {
+    background-color: hsl(26, 100%, 55%);
+    width: 10em;
+    height: 2em;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    border: none;
+}
+.PrecioPromo{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    &::after{
+        content: "50%";
+        color: #fd9044;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+}
+.Precioregular{
+    margin: 8px 0;
+    font-size: 11px;
+    color: gray;
+}
+.carrito, .avatar {
+    width: 25px;
+    height: 25px;
+}
+#ItemsCarrito {
+    margin: 0;
+    padding: 0px;
+    background: #ff7d1b;
+    color: hsl(0, 0%, 100%);
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.ContadorCarrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 24px;
+}
+p{
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.CompanyName {
+    color: hsl(26, 100%, 55%);
+}
+.productName, .Sneakers{
+ font-family: 'Kumbh Sans', sans-serif;
+}
